@@ -6,7 +6,10 @@ const userSchema= new mongoose.Schema({
         type:String,
         unique:true
     },
-    password:String
+    password:String,
+    address:String,
+    phone:String,
+    profile:String
 })
 
 const UserModel = mongoose.model('User',userSchema)
